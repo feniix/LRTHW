@@ -45,3 +45,6 @@ fi
 #   rvm gemset import "$filename" | grep -v already | grep -v listed | grep -v complete | sed '/^$/d'
 # fi
 
+if ! command -v bundle ; then
+  gem install bundler
+fi
